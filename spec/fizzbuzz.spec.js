@@ -1,12 +1,13 @@
-/*globals require, describe, it, expect*/
+/*globals require, describe, it, expect, fizzBuzz*/
 
 //'use strict';
 
-var fizzbuzz = require("../fizzbuzz.js");
+var fizzBuzz = require("../fizzbuzz.js");
 
 describe('fizz buzz', function () {
     it('should return 0 given 0', function () {
-        var result = fizzbuzz.getResult(0);
+        var result = fizzBuzz.getResult(0);
         expect(result.toEqual(0));
     });
+    
 });

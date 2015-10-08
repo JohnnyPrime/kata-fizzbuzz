@@ -1,4 +1,11 @@
-/*glabals */
+/*globals exports*/
 
+var fizzBuzz = {
 
-fizzbuzz
+    getResult: function (nInput) {
+        return nInput;
+    }
+};
+
+exports.fizzBuzzJS = fizzBuzz;
+

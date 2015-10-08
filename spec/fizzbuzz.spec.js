@@ -20,13 +20,25 @@ describe('fizz buzz test', function () {
     it('should return fizz given 3', function () {
         expect(fizzBuzz.getResult(3)).toEqual("fizz");
     });
-    
-        it('should return 4 given 4', function () {
+
+    it('should return 4 given 4', function () {
         expect(fizzBuzz.getResult(4)).toEqual(4);
     });
-    
-        it('should return buzz given 5', function () {
+
+    it('should return buzz given 5', function () {
         expect(fizzBuzz.getResult(5)).toEqual("buzz");
+    });
+
+    it('should return fizzbuzz given 15', function () {
+        expect(fizzBuzz.getResult(15)).toEqual("fizzbuzz");
+    });
+
+    it('should return 19 given 19', function () {
+        expect(fizzBuzz.getResult(19)).toEqual(19);
+    });
+
+    it('should return fizzbuzz given 30', function () {
+        expect(fizzBuzz.getResult(30)).toEqual("fizzbuzz");
     });
 
 });

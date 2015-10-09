@@ -3,12 +3,12 @@ body {
 }
 
 h1 {
-    color: navy;
+    color: darkcyan;
     margin-left: 20px;
 }
 
 .fizzBlock {
-    padding: 10px 20px 10px 10px;
+    padding: 10px 20px 10px 20px;
     border-radius: 15px; 
     background-color: darkcyan;
     color: white;

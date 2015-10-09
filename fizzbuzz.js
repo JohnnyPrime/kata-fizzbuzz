@@ -1,22 +1,31 @@
 /*globals exports*/
 
-var fizzBuzz = {
+var fizzBuzz = function (nInput) {
+    var list = '';
 
-    getResult: function (nInput) {
-        if (nInput % 15 === 0 && nInput !== 0) {
-            return "fizzbuzz";
+    for (var i = 0; i < nInput; i++) {
+
+        if (i === 0) {
+            list = list.concat("0");
+        } else if (i % 15 === 0) {
+            list = list.concat(", fizzbuzz");
+            //          return "fizzbuzz";
+        } else if (i % 3 === 0) {
+            list = list.concat(", fizz");
+            //          return "fizz";
+        } else if (i % 5 === 0) {
+            list = list.concat(", buzz");
+            //           return "buzz";
+        } else {
+            list = list.concat(", " + i);
+            //          return i;
         }
 
-        if (nInput % 3 === 0 && nInput !== 0) {
-            return "fizz";
-        }
-
-        if (nInput % 5 === 0 && nInput !== 0) {
-            return "buzz";
-        }
-
-        return nInput;
     }
+    console.log(list);
 };
 
-exports.fizzBuzz = fizzBuzz;
+fizzBuzz(30);
+
+
+//exports.fizzBuzz = fizzBuzz;
